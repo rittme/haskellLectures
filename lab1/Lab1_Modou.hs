@@ -33,3 +33,9 @@ power2 n k  | otherwise = n * (n^(k - 1))
 -- Part 4
 
 -- A 
+
+-- B
+prop_power n k = let k' = abs k in
+                  (power n k' == power1 n k')
+                  && (power n k' == power2 n k')
+                  && (power n k' == n^k')
