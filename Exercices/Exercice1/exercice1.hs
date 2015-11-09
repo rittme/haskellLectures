@@ -74,7 +74,6 @@ steps n
   | n == 1 = 1
   | otherwise = steps (next n)+1
 
-
 numbers :: Int -> [Int]
 numbers n
      |n==1      = [1]
